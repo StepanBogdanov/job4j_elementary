@@ -4,10 +4,10 @@ public class Defragment {
     public static String[] compress(String[] array) {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
-                int nullIndex = index; /* указатель на null ячейку. */
+                int nullIndex = index;
                 for (int i = nullIndex; i < array.length; i++) {
                     if (array[i] != null) {
-                        int notNullIndex = i; /* указатель на notNull ячейку */
+                        int notNullIndex = i;
                         SwitchArray.swap(array, nullIndex, notNullIndex);
                         break;
                     }
